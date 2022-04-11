@@ -11,7 +11,7 @@ argo-cd:
           type: helm
           url: https://argoproj.github.io/argo-helm
     additionalApplications: 
-      - name: argocd
+      - name: argo
         namespace: argocd
         destination:
           namespace: argocd
