@@ -10,6 +10,9 @@ argo-cd:
         - name: argo-helm
           type: helm
           url: https://argoproj.github.io/argo-helm
+        - name: external-secrets
+          type: helm
+          url: https://charts.external-secrets.io
     additionalApplications: 
       - name: argo
         namespace: argocd
