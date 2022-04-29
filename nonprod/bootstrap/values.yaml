@@ -30,7 +30,7 @@ argo-cd:
           - CreateNamespace=true
       - name: apps
         namespace: argocd
-        destionation:
+        destination:
           namespace: argocd
           server: https://kubernetes.default.svc
         project: argocd
@@ -39,7 +39,7 @@ argo-cd:
             version: v3
           path: nonprod/apps
           repoURL: https://github.com/thecooldrop/argokt.git
-          targetRevision: JEAD
+          targetRevision: HEAD
         syncPolicy:
           syncOptions:
           - CreateNamespace=true
